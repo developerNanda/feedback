@@ -7,6 +7,7 @@ import Page404 from './pages/404/404'
 import DashboardPage from './pages/dashboard/Dashboard';
 import LoginPage from './pages/auth/LoginPage';
 import FeedbackPage from './pages/feedbackPage/FeedbackPage';
+import QRCodePage from './pages/QRCode/QRCode';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       <Route element={<UnauthorizedLayout />}>
         <Route path="/" element={<Page404 />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/feedback" element={<FeedbackPage />} />
+        <Route path="/feedback/:qrcode/:restarentcode" element={<FeedbackPage />} />
+        <Route path="/qrcode" element={<QRCodePage />} />
       </Route>
 
       {/* Private Routes */}
