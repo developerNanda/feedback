@@ -1,12 +1,8 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "~/*": ["./*"],
-        "@/*": ["./*"],
-        "~~/*": ["./*"],
-        "@@/*": ["./*"]
-      }
-    },
-    "exclude": ["node_modules", ".netlify", "build"]
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "*": ["src/*"]
+    }
   }
+}
