@@ -20,7 +20,7 @@ jobs:
           echo MONGODB_COLLECTION = "tasks" >> .env.local
 
       - name: Install project dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
